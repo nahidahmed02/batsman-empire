@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Cricket Bat
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Live Site link](https://dapper-malasada-9812b2.netlify.app/)
 
 ## Available Scripts
 
