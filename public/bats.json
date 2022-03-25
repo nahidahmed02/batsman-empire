@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "KOOKABURRA SHADOW PRO 2000",
+        "price": "575",
+        "photo": "../images/kookaburra_Shadow_Pro_2000.webp"
+    },
+    {
+        "id": "2",
+        "name": "MASURI TON T-LINE",
+        "price": "600",
+        "photo": "../images/MASURI TON T-LINE.webp"
+    },
+    {
+        "id": "3",
+        "name": "KOOKABURRA FEVER PRO 2000",
+        "price": "375",
+        "photo": "../images/KOOKABURRA FEVER PRO 2000.webp"
+    },
+    {
+        "id": "4",
+        "name": "SG PLAYERS EDITION",
+        "price": "575",
+        "photo": "../images/SG PLAYERS EDITION.webp"
+    },
+    {
+        "id": "5",
+        "name": "NEW BALANCE DC 1080",
+        "price": "1100",
+        "photo": "../images/NEW BALANCE DC 1080.webp"
+    },
+    {
+        "id": "6",
+        "name": "GRAY-NICOLLS GIANT",
+        "price": "275",
+        "photo": "../images/gray-nicolls giant.webp"
+    },
+    {
+        "id": "7",
+        "name": "GUNN & MOORE DIAMOND",
+        "price": "1195",
+        "photo": "../images/GUNN & MOORE DIAMOND.webp"
+    },
+    {
+        "id": "8",
+        "name": "KOOKABURRA GHOST PRO 1500",
+        "price": "275",
+        "photo": "../images/KOOKABURRA GHOST PRO 1500.webp"
+    },
+    {
+        "id": "9",
+        "name": "MRF RUN MACHINE",
+        "price": "500",
+        "photo": "../images/MRF_Run_Machine.webp"
+    }
+]
