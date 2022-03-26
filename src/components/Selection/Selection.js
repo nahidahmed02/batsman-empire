@@ -2,8 +2,7 @@ import React from 'react';
 import './Selection.css'
 
 const Selection = (props) => {
-    const { resetBtn } = props;
-    const { selection } = props;
+    const { resetBtn, selection } = props;
 
     const name = selection.map(bat => bat.name);
 
