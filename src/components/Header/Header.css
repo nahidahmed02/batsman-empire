@@ -1,7 +1,11 @@
-h1{
+.headings{
+    text-align: center;
+}
+
+.headings h1{
     color:brown;
 }
 
-h2{
+.headings h2{
     color: chocolate;
 }
