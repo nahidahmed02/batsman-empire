@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Bat = (props) => {
-
+    const { handleAddBtn } = props;
     const { photo, name, price } = props.bat;
 
     return (
@@ -14,7 +14,7 @@ const Bat = (props) => {
                     <h5 className="card-title">Name: {name}</h5>
                     <h6 className="card-title">Price: ${price}</h6>
                 </div>
-                <button className='btn btn-outline-dark d-flex justify-content-center align-items-center'>ADD TO CART<FontAwesomeIcon className='ms-3' icon={faShoppingCart}></FontAwesomeIcon></button>
+                <button onClick={() => handleAddBtn(props.bat)} className='btn btn-outline-dark d-flex justify-content-center align-items-center'>ADD TO CART<FontAwesomeIcon className='ms-3' icon={faShoppingCart}></FontAwesomeIcon></button>
             </div>
         </div>
     );
