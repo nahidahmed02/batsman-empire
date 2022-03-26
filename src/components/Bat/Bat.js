@@ -1,12 +1,13 @@
-import { faShoppingBag, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Bat = (props) => {
+
     const { photo, name, price } = props.bat;
-    console.log(photo);
+
     return (
-        <div className='col-lg-4 col-12 g-1'>
+        <div className='col-lg-4 col-12 g-1 mb-2'>
             <div className="card h-100">
                 <img className='card-img-top p-2' src={photo} alt="" />
                 <div className="card-body card-footer">
