@@ -6,7 +6,6 @@ import './Shop.css'
 const Shop = () => {
     const [bats, setBats] = useState([]);
     const [selection, setSelection] = useState([]);
-
     useEffect(() => {
         fetch('bats.json')
             .then(res => res.json())
@@ -14,6 +13,7 @@ const Shop = () => {
     }, []);
 
     const handleAddBtn = (bat) => {
+
         if (selection.length === 4) {
             return;
         }
