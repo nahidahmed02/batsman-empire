@@ -13,9 +13,13 @@ const Shop = () => {
     }, []);
 
     const handleAddBtn = (bat) => {
+        const selected = selection.find(x => x.id === bat.id);
 
         if (selection.length === 4) {
             return;
+        }
+        else if (selected) {
+            return
         }
         else {
             const newSelection = [...selection, bat];
@@ -26,6 +30,7 @@ const Shop = () => {
     const resetBtn = () => {
         setSelection([])
     }
+
     return (
         <div className='row mt-5  ms-5 me-5'>
             <div className='col-lg-10 col-7'>
