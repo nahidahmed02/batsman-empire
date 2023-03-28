@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Bat from '../Bat/Bat';
-import Modal from '../Modal';
 import Selection from '../Selection/Selection'
 import './Shop.css'
 
@@ -27,12 +26,10 @@ const Shop = () => {
             setSelection(newSelection);
         }
     }
-    let [showModal, setShowModal] = useState(false)
 
-    const random = Math.floor(Math.random() * selection.length);
     const randomBtn = () => {
-        // alert(`You may choose ${selection[random].name}`);
-        setShowModal(true)
+        const random = Math.floor(Math.random() * selection.length);
+        alert(`You may choose ${selection[random].name}`);
     }
 
     const resetBtn = () => {
@@ -53,11 +50,6 @@ const Shop = () => {
                     }
                 </div>
             </div>
-
-            {showModal && <Modal
-                random={random}
-                selection={selection}
-            ></Modal>}
 
             <div className='col-lg-3 col-6 mt-2'>
                 <Selection
