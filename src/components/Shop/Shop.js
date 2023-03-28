@@ -27,6 +27,11 @@ const Shop = () => {
         }
     }
 
+    const randomBtn = () => {
+        const random = Math.floor(Math.random() * selection.length);
+        alert(`You may choose ${selection[random].name}`);
+    }
+
     const resetBtn = () => {
         setSelection([])
     }
@@ -47,6 +52,7 @@ const Shop = () => {
             <div className='col-lg-2 col-5'>
                 <Selection
                     selection={selection}
+                    randomBtn={randomBtn}
                     resetBtn={resetBtn}
                 ></Selection>
             </div>
