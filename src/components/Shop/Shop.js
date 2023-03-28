@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Bat from '../Bat/Bat';
+import Modal from '../Modal';
 import Selection from '../Selection/Selection'
 import './Shop.css'
 
@@ -26,10 +27,12 @@ const Shop = () => {
             setSelection(newSelection);
         }
     }
+    let [showModal, setShowModal] = useState(false)
 
+    const random = Math.floor(Math.random() * selection.length);
     const randomBtn = () => {
-        const random = Math.floor(Math.random() * selection.length);
-        alert(`You may choose ${selection[random].name}`);
+        // alert(`You may choose ${selection[random].name}`);
+        setShowModal(true)
     }
 
     const resetBtn = () => {
@@ -37,8 +40,9 @@ const Shop = () => {
     }
 
     return (
-        <div className='row mt-5  ms-5 me-5'>
-            <div className='col-lg-10 col-7'>
+
+        <div className='row mt-4 mt-lg-5 mx-2 mx-lg-5'>
+            <div className='col-lg-9 col-6'>
                 <div className='row'>
                     {
                         bats.map(bat => <Bat
@@ -49,7 +53,13 @@ const Shop = () => {
                     }
                 </div>
             </div>
-            <div className='col-lg-2 col-5'>
+
+            {showModal && <Modal
+                random={random}
+                selection={selection}
+            ></Modal>}
+
+            <div className='col-lg-3 col-6 mt-2'>
                 <Selection
                     selection={selection}
                     randomBtn={randomBtn}

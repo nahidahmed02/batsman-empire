@@ -1,4 +1,8 @@
-.selected{
+.selected {
     position: sticky;
     top: 0;
+}
+
+h4 {
+    color: chocolate;
 }
